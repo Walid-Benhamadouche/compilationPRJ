@@ -34,9 +34,12 @@ public class analyseur {
     private static String[] mot;
 
     private static void charger() throws FileNotFoundException {
+        FileNameExtensionFilter filter = new FileNameExtensionFilter("compila file", "compila");
+        file_chooser.setFileFilter(filter);
         file_chooser.addChoosableFileFilter(filter);
         if(file_chooser.showOpenDialog(null)==JFileChooser.APPROVE_OPTION){
             File file = file_chooser.getSelectedFile();
+
             Scanner sc_lignes = new Scanner(file);
             Scanner sc_mots = new Scanner(file);
             mots.clear();
