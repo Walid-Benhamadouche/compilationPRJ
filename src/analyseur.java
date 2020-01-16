@@ -22,7 +22,6 @@ public class analyseur {
     private JTextArea textArea;
 
     private static JFileChooser file_chooser = new JFileChooser("C:\\Users\\sol\\Desktop");
-    private static FileNameExtensionFilter filter = new FileNameExtensionFilter("Fichiers text", "snl");
     private static ArrayList<String> mots = new ArrayList<>();
     private static ArrayList<String> lignes = new ArrayList<>();
     private static ArrayList<String> sortie_lexic;
